@@ -1,7 +1,7 @@
 from datetime import datetime
-from fastapi import FastAPI
+from fastapi_csv import FastAPI_CSV
 
-app = FastAPI()
+app = FastAPI_CSV("data.txt")
 
 @app.get("/")
 def root():
